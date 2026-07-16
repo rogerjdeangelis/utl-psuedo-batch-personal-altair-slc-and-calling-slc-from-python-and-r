@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-16T19:35:00Z",
+  "_captured_run_id": "r_c56fe79c7ed14d6db5c919d7da7b3215",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Processing inline DATALINES (2 lines)",
+    "NOTE: Read 2 rows from DATALINES.",
+    "NOTE: Reading from fileref wps.bat",
+    "NOTE: Read 2 rows from wps.bat."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

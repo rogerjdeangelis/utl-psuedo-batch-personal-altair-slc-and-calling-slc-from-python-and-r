@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_write_launcher_bat",
+  "source_file": "utl-psuedo-batch-personal-altair-slc-and-calling-slc-from-python-and-r.sas",
+  "source_blob_sha": "2d1941a2f6e2a513fca75f9c821c32d718457f87",
+  "source_commit": "6b383f25401d1bb56af7f9961e14c7c579efa082",
+  "notes": "The repo's .sas file is mostly a documentation block (guarded by %stop_submission;) describing how to pseudo-batch a personal Altair SLC session by writing a Windows .bat launcher from a DATA _NULL_ step and invoking it from R/Python. Extracted the one genuine runnable fragment: a DATA _NULL_ step using FILE / INPUT / PUT _INFILE_ / CARDS4 to write inline text to an external file. Edits: (1) redirected the hardcoded c:/bat/wps.bat path to a relative wps.bat so it runs in the sandbox; (2) swapped CARDS4 for CARDS with an explicit INFILE DATALINES ahead of the bare INPUT; statement -- same documented SAS technique, needed because Jenner's parser currently rejects bare INPUT; immediately followed by implicit DATALINES/CARDS (this exact bug was already found and filed as regression test tests/404021_parser_null_input_datalines in EastAgile/jenner-language by a prior jenner-check run on a different repo; confirmed it still reproduces against the current binary; not re-filed, not part of this PR). Added a second DATA _NULL_ step that reads the written .bat back and PUTs it to the log, and a third step + PROC PRINT that reloads it as a dataset and lists it, so the run has genuine, observable log and listing output proving the write worked."
+}
