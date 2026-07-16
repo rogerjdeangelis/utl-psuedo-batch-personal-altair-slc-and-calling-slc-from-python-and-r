@@ -1,0 +1,6 @@
+
+                                                                                                                                line
+------------------------------------------------------------------------------------------------------------------------------------
+@echo off
+powershell -ExecutionPolicy Bypass -Command "Start-Process 'C:\Program Files\Altair\Analytics Workbench\2025\eclipse\workbench.exe'"
+

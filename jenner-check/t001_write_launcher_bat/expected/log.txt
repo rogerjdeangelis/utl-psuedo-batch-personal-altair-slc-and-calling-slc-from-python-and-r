@@ -1,0 +1,36 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA _null_
+
+NOTE: Writing to fileref wps.bat (/tmp/work/r_c56fe79c7ed14d6db5c919d7da7b3215/wps.bat)
+NOTE: Processing inline DATALINES (2 lines)
+
+NOTE: Read 2 rows from DATALINES.
+NOTE: Wrote _null_ (2 rows, 0 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA _null_
+
+NOTE: Reading from fileref wps.bat (wps.bat)
+@echo off
+powershell -ExecutionPolicy Bypass -Command "Start-Process 'C:\Program Files\Altair\Analytics Workbench\2025\eclipse\workbench.exe'"
+
+NOTE: Read 2 rows from wps.bat.
+NOTE: Wrote _null_ (2 rows, 0 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA batfile
+
+NOTE: Reading from fileref wps.bat (wps.bat)
+
+NOTE: Read 2 rows from wps.bat.
+NOTE: Wrote batfile (2 rows, 1 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=batfile
+
+NOTE: PROC PRINT completed: 2 observations printed, 1 variables
